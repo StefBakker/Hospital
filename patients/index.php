@@ -2,6 +2,7 @@
 	require_once "index.logic.php";
 	include "../common/header.php";
 ?>
+<div class="header">
 	<h1>Patiënts</h1>
 	<p class="options"><a href="create.php">create</a></p>
 	<table>
@@ -35,3 +36,5 @@
 <?php
 	include "../common/footer.php";
 ?>
+
+</div>

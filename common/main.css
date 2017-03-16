@@ -1,6 +1,12 @@
+*{
+}
+
 body {
 	margin : 0 auto;
 	width : 700px;
+	background-image: url("../img/background.jpg");
+	background-repeat: no-repeat;
+	background-position: 0 auto;
 }
 
 table {
@@ -15,28 +21,39 @@ table, td, th {
 }
 
 td, th {
-	padding : 2px;
+	padding: 2px;
 }
 
 th {
-	text-align : left;
+	text-align: left;
 }
 
 td.center{
-	text-align : center;
+	text-align: center;
 }
 
 a {
-	color : black;
+	color: black;
 }
 p.options{
-	text-align : right;
+	text-align: right;
 }
 
 label {
-	display : inline-block;
-	width : 100px;
+	display: inline-block;
+	width: 100px;
 }
 form div {
 	margin: 5px 0;
+}
+
+.header {
+	background-color: white;
+	text-align: center;
+	margin-top: 150px;
+}
+
+.footerbar {
+	background-color: grey;
+	color: white;
 }

@@ -8,9 +8,10 @@
 		$adress = $db->escape_string($_POST["adress"]);
 		$street = $db->escape_string($_POST["street"]);
 		$zip = $db->escape_string($_POST["zip"]);
+		$patient = $db->escape_string($_POST["select"]);
 
 		// Prepare query and execute
-		$query = "insert into client (name, last_name, adress, street, zip) values ('$name', '$last_name', '$adress', '$street', '$zip')";
+		$query = "insert into client (name, last_name, adress, street, zip, patient) values ('$name', '$last_name', '$adress', '$street', '$zip', '$patient')";
 		$result = $db->query($query);
 	
     // Tell the browser to go back to the index page.

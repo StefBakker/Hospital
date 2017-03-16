@@ -1,7 +1,10 @@
 <?php
 	require_once "create.logic.php";
 	include "../common/header.php";
+	include "showpetname.php";
 ?>
+
+<div class="header">
 	<h1>New Cliënt</h1>
 	<form method="post">
 		<div>
@@ -23,7 +26,18 @@
 		<div>
 			<label for="zip">Zip:</label>
 			<textarea id="zip" name="zip"></textarea>
-		</div>
+		</div>	
+			<label for="patient">Patient:</label>
+			<br>
+			<select id="select" name="select">
+<?php
+	foreach($patients as $patient):
+?>
+<option value="<?=$patient['name']?>"><?=$patient['name']?></option>
+<?php
+	endforeach;
+?>
+</select>
 		<div>
 			<label></label>
 			<input type="submit" value="Save">
@@ -32,3 +46,4 @@
 <?php
 	include "../common/footer.php";
 ?>
+</div>

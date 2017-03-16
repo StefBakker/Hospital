@@ -2,6 +2,7 @@
 	require_once "delete.logic.php";
 	include "../common/header.php";
 ?>
+<div class="header">
 	<h1>Delete Cliënt</h1>
 	<p>Are you sure you want to delete:</p>
 	<form method="post">
@@ -27,6 +28,10 @@
 			<span><?=$client['zip']?></span>
 		</div>
 		<div>
+			<label for="patient">Patient:</label>
+			<span><?=$client['patient']?></span>
+		</div>
+		<div>
 			<label></label>
 			<input type="submit" name="confirmed" value="Yes">
 			<input type="submit" name="canceled" value="No">
@@ -35,3 +40,4 @@
 <?php
 	include "../common/footer.php";
 ?>
+</div>

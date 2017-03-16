@@ -1,3 +1,4 @@
-		<p><a href="../">Home</a></p>
+		<div class="footerbar"><p><a class="footerbar" href="../">Home</a></p></div>
+		
 	</body>
 </html>

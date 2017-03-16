@@ -1,9 +1,11 @@
 <?php
 	require_once "index.logic.php";
 	include "../common/header.php";
+	include "showpetname.php";
 ?>
+<div class="header">
+<p class="options"><a href="create.php">Create</a></p>
 	<h1>Cliënts</h1>
-	<p class="options"><a href="create.php">create</a></p>
 	<table>
 		<thead>
 			<tr>
@@ -12,6 +14,7 @@
 				<th>Adress</th>
 				<th>Street</th>
 				<th>Zip</th>
+				<th>Patiënt</th>
 			</tr>
 		</thead>
 		</tbody>
@@ -24,6 +27,7 @@
 				<td><?=$client['adress']?></td>
 				<td><?=$client['street']?></td>
 				<td><?=$client['zip']?></td>
+				<td><?=$client['patient']?></td>
 				<td class="center"><a href="edit.php?id=<?=$client['id']?>">edit</a></td>
 				<td class="center"><a href="delete.php?id=<?=$client['id']?>">delete</a></td>
 			</tr>
@@ -37,3 +41,4 @@
 <?php
 	include "../common/footer.php";
 ?>
+</div>

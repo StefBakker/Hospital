@@ -1,13 +1,14 @@
 <?php
 	include "../common/header.php";
 ?>
+<div class="header">
+<br>
 	<h1>Hospital</h1>
-	<ul>
-		<li><a href="../patients/index.php">Patiënts</a></li>
-		<li><a href="../clients/index.php">Clients</a></li>
-		<li><a href="../species/index.php">Species</a></li>
-	</ul>
-	
+		<a href="../patients/index.php">Patiënts</a><br>
+		<a href="../clients/index.php">Cliënts</a><br>
+		<a href="../species/index.php">Species</a><br>
+		<br>
 <?php
 	include "../common/footer.php";
 ?>
+</div>
